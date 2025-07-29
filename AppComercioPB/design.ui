@@ -1,0 +1,2891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>935</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VALORIZACIÓN DEL CONCENTRADO DEL PLOMO</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/comercio.png</normaloff>images/comercio.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(229, 226, 195);
+
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_9">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_20">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 700 12pt &quot;Roboto&quot;;</string>
+         </property>
+         <property name="text">
+          <string>VALORIZACIÓN DEL CONCENTRADO DEL PLOMO</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>220</width>
+           <height>17</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bt_mode_theme">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-radius: 15px;
+
+}
+
+QPushButton:hover{
+	border-radius: 15px;
+ }</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>images/sun.svg</normaloff>images/sun.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {             
+            border-width: 1px;         
+            border-style: solid;       
+            border-color: #000000;         
+            border-radius: 2px; 	            
+        }
+
+QTabBar::tab:hover{
+border:1px solid #7f5af0;
+}
+
+
+QTabBar::tab{
+border: 1px solid  #000000;	  
+width:170px;                                    
+border-radius:1px;
+border-top-left-radius: 1px;                   
+ border-top-right-radius:1px;
+padding:6px 6px;
+font: 12pt &quot;Lato&quot;;
+
+}
+
+QTabBar::tab:selected{
+border:1px solid #7f5af0;
+color: #7f5af0;
+
+}
+
+QTabBar::tab:selected:hover{
+border:1px solid #000000;
+
+}
+
+
+
+QDoubleSpinBox{
+	font: 12pt &quot;Lato&quot;;
+    padding-right: 2px; 
+    border-width: 1px; 
+	border-style: outset;	 
+	height:25px;
+	border-radius:  8px;
+	border: 1px solid  #7f5af0;	 
+}
+
+QPushButton {
+	font: 12pt &quot;Lato&quot;;
+ 	border-radius: 10px;
+    height:  25px;
+	padding: 4px;
+	border: 2px solid  #7f5af0;	 
+    }
+
+ QPushButton:hover {
+        background-color: #7f5af0;
+    }
+
+QGroupBox{
+border: 1px solid  #7f5af0;	  
+ padding-top: 10px;
+font: 900 10pt &quot;Lato&quot;;
+color: #7f5af0;
+}
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>images/inpunt.png</normaloff>images/inpunt.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Datos de entrada</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_22">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="title">
+              <string>Elementos Pagables</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label_30">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                  </property>
+                  <property name="text">
+                   <string>Leyes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_10">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_14">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_28">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>PB</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="PB_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_29">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_6">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>AG</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="AG_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_7">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Oz/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_8">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>AU</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="AU_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_9">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Oz/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_18">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QSplitter" name="splitter_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_5">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                   </property>
+                   <property name="text">
+                    <string>Precio</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_15">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="PB_PRECIO">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_31">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_16">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AG_PRECIO">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_33">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/Oz</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_17">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AU_PRECIO">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_35">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/Oz</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_19">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QSplitter" name="splitter_18">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_37">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                   </property>
+                   <property name="text">
+                    <string>Recuperación</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_19">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="PB_R">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="minimum">
+                    <double>0.000000000000000</double>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_39">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_20">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AG_R">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_41">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_21">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AU_R">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_43">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_20">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QSplitter" name="splitter_22">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_45">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                   </property>
+                   <property name="text">
+                    <string>Deducción Mínima</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_23">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="PB_DM">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_47">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_24">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AG_DM">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_49">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>gr/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_25">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AU_DM">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_51">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>gr/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="title">
+              <string>Elementos Penalizables </string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_23">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                  </property>
+                  <property name="text">
+                   <string>Leyes</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_12">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>AS</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="AS_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_13">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_10">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>SB</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="SB_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_11">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_7">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_14">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>BI</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="BI_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_15">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_8">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_16">
+                   <property name="minimumSize">
+                    <size>
+                     <width>50</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>ZN</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="ZN_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_17">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_15">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_17">
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                  </property>
+                  <property name="text">
+                   <string>Limites</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_11">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_31">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AS_limite">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_34">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_32">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="SB_limite">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_38">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_33">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="BI_limite">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_42">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_34">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="ZN_limite">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_46">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_16">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="QLabel" name="label_32">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                  </property>
+                  <property name="text">
+                   <string>Penalidad</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_12">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_35">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AS_penalidad">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_36">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_36">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="SB_penalidad">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_40">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_37">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="BI_penalidad">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_44">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_38">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="ZN_penalidad">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_48">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_17">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_19">
+                <item>
+                 <widget class="QLabel" name="label_50">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 900 12pt &quot;Lato&quot;;
+color: rgb(127, 90, 240);</string>
+                  </property>
+                  <property name="text">
+                   <string>p/c</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_13">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_39">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="AS_pc">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_71">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_40">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="SB_pc">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_73">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_41">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="BI_pc">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_75">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_42">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QDoubleSpinBox" name="ZN_pc">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_79">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="styleSheet">
+              <string notr="true"> </string>
+             </property>
+             <property name="title">
+              <string>.</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_24">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <item>
+                 <widget class="QSplitter" name="splitter_9">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_18">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Produción</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="produccion_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_19">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>TMH</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_10">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_20">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Humedad</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="humedad_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_21">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>%</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_11">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_22">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Maquila</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="maquila_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_23">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_21">
+                <item>
+                 <widget class="QSplitter" name="splitter_12">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_24">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Precio Base</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="preciobase_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_25">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/TM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_13">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_26">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Up Scale</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="upscale_LEYES">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_27">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_30">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_66">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>p/c</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="escalador">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                   <property name="value">
+                    <double>0.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_67">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_14">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QSplitter" name="splitter_28">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_56">
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Costo Refinación Ag</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="AG_refinacion">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_57">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/Oz</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSplitter" name="splitter_29">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLabel" name="label_58">
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>Costo Refinación Au</string>
+                   </property>
+                  </widget>
+                  <widget class="QDoubleSpinBox" name="AU_refinacion">
+                   <property name="maximumSize">
+                    <size>
+                     <width>200</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="decimals">
+                    <number>3</number>
+                   </property>
+                   <property name="maximum">
+                    <double>9999999.000000000000000</double>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_59">
+                   <property name="styleSheet">
+                    <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>$/Oz</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>172</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QPushButton" name="BT_CALCULAR">
+                  <property name="text">
+                   <string>CALCULAR</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="BT_LIMPIAR">
+                  <property name="text">
+                   <string>LIMPIAR</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>images/output.png</normaloff>images/output.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Resultados</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QFrame" name="frame_5">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1,1">
+           <item>
+            <widget class="QFrame" name="frame_6">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_25">
+              <item>
+               <widget class="QGroupBox" name="groupBox_6">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="title">
+                 <string>PAGABLES</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <widget class="QLabel" name="label_61">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Pb (%)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_pagables_Pb">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000  $/TM </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <widget class="QLabel" name="label_62">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Ag (Oz/TM)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_pagables_Ag">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000 $/TM </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item>
+                    <widget class="QLabel" name="label_63">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Au (Oz/TM)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_pagables_Au">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000  $/TM </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_21">
+                   <item>
+                    <widget class="QLabel" name="label_64">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>TOTAL</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_pagables_total">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000  $/TM </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="wordWrap">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line_6">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_5">
+                <property name="title">
+                 <string>DEDUCCIONES</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QLabel" name="label_70">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Maquila</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_deducciones_maquila">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000  $/TM </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <widget class="QLabel" name="label_72">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Escalador</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_deducciones_escalador">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000 $/TM </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_13">
+                   <item>
+                    <widget class="QLabel" name="label_74">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>Refinación</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_deducciones_refinacion">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000  $/TM</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_14">
+                   <item>
+                    <widget class="QLabel" name="label_76">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>TOTAL</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_deducciones_total">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000  $/TM</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="title">
+                 <string>PENALIDADES</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_13">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_15">
+                     <item>
+                      <widget class="QLabel" name="label_78">
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>AS</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="S_penalidad_as">
+                       <property name="styleSheet">
+                        <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                       </property>
+                       <property name="text">
+                        <string>0.000  $/TM
+</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_16">
+                     <item>
+                      <widget class="QLabel" name="label_80">
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>SB</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="S_penalidad_sb">
+                       <property name="styleSheet">
+                        <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                       </property>
+                       <property name="text">
+                        <string>0.000 $/TM
+</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_17">
+                     <item>
+                      <widget class="QLabel" name="label_82">
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>BI</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="S_penalidad_bi">
+                       <property name="styleSheet">
+                        <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                       </property>
+                       <property name="text">
+                        <string>0.000 $/TM
+</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_18">
+                     <item>
+                      <widget class="QLabel" name="label_84">
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>ZN</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="S_penalidad_zn">
+                       <property name="styleSheet">
+                        <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                       </property>
+                       <property name="text">
+                        <string>0.000  $/TM
+</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_19">
+                     <item>
+                      <widget class="QLabel" name="label_86">
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>150</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">font: 900 10pt &quot;Roboto&quot;;</string>
+                       </property>
+                       <property name="text">
+                        <string>TOTAL</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="S_penalidad_total">
+                       <property name="styleSheet">
+                        <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;</string>
+                       </property>
+                       <property name="text">
+                        <string>0.000 $/TM
+</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_9">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_7">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QGroupBox" name="groupBox_7">
+                <property name="title">
+                 <string>.</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <item>
+                    <widget class="QLabel" name="label_88">
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 12pt &quot;Segoe UI&quot;;
+color: rgb(127, 90, 240);</string>
+                     </property>
+                     <property name="text">
+                      <string>VALOR POR TMS DE CONCENTRADO:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_valorpRMSdc">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;
+font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000	$/TMS</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_90">
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 12pt &quot;Segoe UI&quot;;
+color: rgb(127, 90, 240);</string>
+                     </property>
+                     <property name="text">
+                      <string>Peso Humedo de concentrado:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_pesohumedoc">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;
+font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string> 0.000	TMH</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_91">
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 12pt &quot;Segoe UI&quot;;
+color: rgb(127, 90, 240);</string>
+                     </property>
+                     <property name="text">
+                      <string>Peso Seco del Concentrado:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_pesosc">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;
+font: 900 italic 12pt &quot;Segoe UI&quot;;font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.000	TMS</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_92">
+                     <property name="styleSheet">
+                      <string notr="true">font: 900 12pt &quot;Segoe UI&quot;;
+color: rgb(127, 90, 240);</string>
+                     </property>
+                     <property name="text">
+                      <string>VALOR DEL CONCENTRADO:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="S_valor_concentrado">
+                     <property name="styleSheet">
+                      <string notr="true">border: 1px solid #7f5af0;
+border-radius: 10px;
+padding: 2px;
+font: 900 italic 12pt &quot;Segoe UI&quot;;</string>
+                     </property>
+                     <property name="text">
+                      <string>0.0000	$ </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_8">
+                <property name="title">
+                 <string>DESCARGAR</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <item>
+                  <widget class="QFrame" name="frame_8">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_16">
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_22">
+                      <item>
+                       <spacer name="horizontalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="bt_export_pdf">
+                        <property name="text">
+                         <string>EXPORTAR  DATOS EN PDF</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_5">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="Line" name="line_8">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
